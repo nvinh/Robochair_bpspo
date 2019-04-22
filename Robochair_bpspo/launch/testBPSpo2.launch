@@ -1,0 +1,10 @@
+<launch>
+	<group ns="ch">
+		<node name="spo2_node" pkg="robochair_bp" type="spo2_talker">
+			<param name="port" type="str" value="/dev/ttyUSB0"/>	
+		</node>
+		<node name="bp_node" pkg="robochair_bp" type="bp_talker">
+	        	<param name="port" type="str" value="/dev/ttyUSB1"/>
+		</node>
+	</group>
+</launch>
